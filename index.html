@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuliner Nusantara</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-danger">
+    
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand " href="index.html" ><img src="img/logo kuliner.jpg" alt="" width="40"><span>Kuliner Nusantara</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#produk">Menu</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Daerah
+          </a>
+          <ul class="dropdown-menu" id="dropdown">
+            <li><a class="dropdown-item" href="Sumatera.html">Sumatera</a></li>
+            <li><a class="dropdown-item" href="Jawa.html">Jawa</a></li>
+            <li><a class="dropdown-item" href="Kalimantan & Sulawesi.html">Kalimantan & Sulawesi</a></li>
+            <li><a class="dropdown-item" href="Bali & Nusa Tenggara.html">Bali & Nusa Tenggara</a></li>
+            <li><a class="dropdown-item" href="Papua & Maluku.html">Papua & Maluku</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Kategori
+          </a>
+          <ul class="dropdown-menu" id="dropdown">
+            <li><a class="dropdown-item" href="Makanan Nusantara.html">Makanan Nusantara</a></li>
+            <li><a class="dropdown-item" href="Minuman Nusantara.html">Minuman Nusantara</a></li>
+            <li><a class="dropdown-item" href="Cemilan Nusantara.html">Cemilan Nusantara</a></li>
+          </ul>
+        </li>
+      
+       <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Lainnya
+          </a>
+          <ul class="dropdown-menu" id="dropdown">
+            <li><a class="dropdown-item" href="#tentang">Tentang Kami</a></li>
+            <li><a class="dropdown-item" href="#informasi">Galeri & Informasi</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-danger" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- hero konten -->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="1000">
+      <img src="img/makanan nusantara.jpeg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h2>Enaknya Kebangetan</h2>
+        <p>Rempahnya Berasa, Enaknya Ga Ada Lawan</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="img/makana kuliner nusantara.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Terlaris & Favorit</h5>
+        <p>Juara Rasa Nusantara, Buktikan Sendiri Kelezatannya</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">Me
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- produk -->
+ <!-- satu -->
+<div class="row mt-3 m-1 bg-danger"  id="produk">
+  <h2 class="text-center mt-4 mb-3 text-white">Menu</h2>
+  <div class="col-sm-3 p-1">
+    <div class="card h-100">
+      <div class="card-body d-flex flex-column">
+        <img src="img/ayam betutu.jpeg" class="d-block w-100"  alt="...">
+        <h5 class="card-title">Ayam Betutu</h5>
+        <p class="card-text mb-2 px-2 no-scrollbar" style="max-height: 100px; overflow-y: auto;">Ayam khas Bali dengan bumbu rempah lengkap yang dimasak hingga empuk dan meresap. Rasanya pedas, gurih, dan aromanya menggugah selera. Cocok disantap dengan nasi hangat dan sambal. </p>
+        <a href="Makanan Nusantara.html" class="btn btn-dark mt-auto">Selengkapnya</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- dua -->
+  <div class="col-sm-3 p-1">
+    <div class="card h-100">
+      <div class="card-body d-flex flex-column">
+        <img src="img/rendang.jpeg" class="d-block w-100"  alt="...">
+        <h5 class="card-title">Rendang</h5>
+        <p class="card-text mb-2 px-2 no-scrollbar" style="max-height: 100px; overflow-y: auto;">Masakan khas Minangkabau berbahan dasar daging sapi yang dimasak perlahan dengan santan dan rempah-rempah pilihan. Cita rasanya gurih, pedas, dan kaya bumbu dengan tekstur daging yang empuk. </p>
+        <a href="Makanan Nusantara.html" class="btn btn-dark mt-auto">Selengkapnya</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- tiga -->
+  <div class="col-sm-3 p-1">
+    <div class="card h-100">
+      <div class="card-body d-flex flex-column">
+        <img src="img/gado gado.jpeg" class="d-block w-100" alt="...">
+        <h5 class="card-title">Gado Gado</h5>
+        <p class="card-text mb-2 px-2 no-scrollbar" style="max-height: 100px; overflow-y: auto;">Gado-Gado (Jakarta)
+        Hidangan khas Betawi yang terdiri dari sayuran rebus, tahu, tempe, dan telur, disajikan dengan saus kacang yang gurih dan lezat. </p>
+        <a href="Makanan Nusantara.html" class="btn btn-dark mt-auto">Selengkapnya</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- empat -->
+  <div class="col-sm-3 p-1">
+    <div class="card h-100">
+      <div class="card-body d-flex flex-column">
+        <img src="img/gudeg.jpeg" class="d-block w-100" alt="...">
+        <h5 class="card-title">Gudeg</h5>
+        <p class="card-textmb-2 px-2 no-scrollbar" style="max-height: 100px; overflow-y: auto;">Makanan khas Yogyakarta berbahan dasar nangka muda yang dimasak dengan santan dan rempah-rempah hingga bercita rasa manis dan gurih. Biasanya disajikan dengan ayam, telur, tahu, tempe, dan sambal krecek. </p>
+        <a href="Makanan Nusantara.html" class="btn btn-dark mt-auto">Selengkapnya</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- produk baris 2 -->
+ <!-- satu -->
+ <div class="row mt-5 m-1 bg-danger">
+  <div class="col-sm-3 p-1">
+    <div class="card h-100">
+      <div class="card-body d-flex flex-column">
+        <img src="img 2/es cendol.jpeg" class="d-block w-100"  alt="...">
+        <h5 class="card-title">Es Cendol </h5>
+        <p class="card-text mb-2 px-2 no-scrollbar" style="max-height: 100px; overflow-y: auto;">Minuman tradisional khas Jawa yang terbuat dari cendol hijau, santan, dan gula aren, rasanya manis dan segar. </p>
+        <a href="Minuman Nusantara.html" class="btn btn-dark mt-auto">Selengkapnya</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- dua -->
+  <div class="col-sm-3 p-1">
+    <div class="card h-100">
+      <div class="card-body d-flex flex-column">
+        <img src="img 2/es teler.jpeg" class="d-block w-100"  alt="...">
+        <h5 class="card-title">Es Teler</h5>
+        <p class="card-text mb-2 px-2 no-scrollbar" style="max-height: 100px; overflow-y: auto;">Minuman segar khas Indonesia berisi alpukat, kelapa muda, nangka, dan susu, dengan rasa manis dan menyegarkan. </p>
+        <a href="Minuman Nusantara.html" class="btn btn-dark mt-auto">Selengkapnya</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- tiga -->
+  <div class="col-sm-3 p-1">
+    <div class="card h-100">
+      <div class="card-body d-flex flex-column">
+        <img src="img 2/bandrek.jpeg" class="d-block w-100" alt="...">
+        <h5 class="card-title">Bandrek</h5>
+        <p class="card-text mb-2 px-2 no-scrollbar" style="max-height: 100px; overflow-y: auto;">Minuman hangat khas Jawa Barat dari jahe, gula aren, dan rempah-rempah yang menghangatkan tubuh. </p>
+        <a href="Minuman Nusantara.html" class="btn btn-dark mt-auto">Selengkapnya</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- empat -->
+  <div class="col-sm-3 p-1">
+    <div class="card h-100">
+      <div class="card-body d-flex flex-column">
+        <img src="img/pisang ijo.jpg" class="d-block w-100" alt="...">
+        <h5 class="card-title">Es Pisang Ijo</h5>
+        <p class="card-textmb-2 px-2 no-scrollbar" style="max-height: 100px; overflow-y: auto;">Minuman/dessert khas Makassar, Sulawesi Selatan, berisi pisang dibalut adonan hijau, disajikan dengan sirup dan saus santan yang manis segar. </p>
+        <a href="Minuman Nusantara.html" class="btn btn-dark mt-auto">Selengkapnya</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- cemilan-->
+ <!-- satu -->
+ <div class="row mt-5 m-1 bg-danger">
+  <div class="col-sm-3 p-1">
+    <div class="card h-100">
+      <div class="card-body d-flex flex-column">
+        <img src="img 3/cenil.jpeg" class="d-block w-100"  alt="...">
+        <h5 class="card-title">Cenil</h5>
+        <p class="card-text mb-2 px-2 no-scrollbar" style="max-height: 100px; overflow-y: auto;">Jajanan tradisional khas Jawa dari singkong berwarna-warni, disajikan dengan kelapa parut dan gula merah, rasanya manis dan kenyal. </p>
+        <a href="Cemilan Nusantara.html" class="btn btn-dark mt-auto">Selengkapnya</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- dua -->
+  <div class="col-sm-3 p-1">
+    <div class="card h-100">
+      <div class="card-body d-flex flex-column">
+        <img src="img 3/cireng.jpeg" class="d-block w-100"  alt="...">
+        <h5 class="card-title">Cireng</h5>
+        <p class="card-text mb-2 px-2 no-scrollbar" style="max-height: 100px; overflow-y: auto;">Camilan khas Jawa Barat dari aci yang digoreng, teksturnya renyah di luar dan kenyal di dalam </p>
+        <a href="Cemilan Nusantara.html" class="btn btn-dark mt-auto">Selengkapnya</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- tiga -->
+  <div class="col-sm-3 p-1">
+    <div class="card h-100">
+      <div class="card-body d-flex flex-column">
+        <img src="img 3/combro.jpeg" class="d-block w-100" alt="...">
+        <h5 class="card-title">Combro</h5>
+        <p class="card-text mb-2 px-2 no-scrollbar" style="max-height: 100px; overflow-y: auto;">Camilan khas Jawa Barat dari singkong parut berisi oncom pedas, digoreng hingga renyah. </p>
+        <a href="Cemilan Nusantara.html" class="btn btn-dark mt-auto">Selengkapnya</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- empat -->
+  <div class="col-sm-3 p-1">
+    <div class="card h-100">
+      <div class="card-body d-flex flex-column">
+        <img src="img 3/getuk.jpeg" class="d-block w-100" alt="...">
+        <h5 class="card-title">Getuk</h5>
+        <p class="card-textmb-2 px-2 no-scrollbar" style="max-height: 100px; overflow-y: auto;">Jajanan tradisional khas Jawa dari singkong tumbuk, disajikan dengan kelapa parut dan rasa manis </p>
+        <a href="Cemilan Nusantara.html" class="btn btn-dark mt-auto">Selengkapnya</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- informasi -->
+ <div class="mt-5 m-2 bg-danger" id="informasi">
+ <h2 class="text-center mt-5 text-white">Galeri & Informasi</h2>
+ <div class="row row-cols-1 row-cols-md-2 g-3">
+  <div class="col">
+    <div class="card">
+      <img src="img/informasi.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Galeri Kuliner Nusantara</h5>
+        <p class="card-text">Galeri Kuliner Nusantara menampilkan beragam hidangan khas dari seluruh penjuru Indonesia.
+        Setiap foto menghadirkan kelezatan makanan tradisional dengan cita rasa autentik, mulai dari masakan Sumatera, Jawa, Kalimantan, Sulawesi, hingga Papua.
+        Melalui galeri ini, pengunjung dapat melihat keindahan kuliner Nusantara yang kaya akan rempah, warna, dan budaya.
+        Nikmati visual makanan khas Indonesia yang menggugah selera dan penuh makna budaya.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="img/chef.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Informasi Kuliner Nusantara</h5>
+        <p class="card-text">Website Kuliner Nusantara menyediakan informasi lengkap tentang makanan tradisional Indonesia, mulai dari asal daerah, bahan utama, hingga ciri khas setiap hidangan.
+        Indonesia memiliki kekayaan kuliner yang beragam karena pengaruh budaya, adat, dan rempah-rempah.
+        Setiap daerah memiliki makanan khas dengan rasa, aroma, dan cara penyajian yang unik.
+        Melalui website ini, kami ingin memperkenalkan dan melestarikan warisan kuliner Nusantara agar tetap dikenal oleh generasi sekarang dan yang akan datang.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="img/pelanggan.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Kepuasaan Pelanggan</h5>
+        <p class="card-text">Kami mengutamakan kepuasan pelanggan dengan menghadirkan informasi kuliner yang lengkap, menarik, dan berkualitas.Nikmati pengalaman menjelajahi Kuliner Nusantara dengan nyaman dan menyenangkan.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="img/pelayan.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Layanan Kuliner Nusantara</h5>
+        <p class="card-text">Nikmati layanan informasi kuliner Nusantara yang informatif dan menarik.
+        Kami hadir untuk membantu kamu mengenal kelezatan makanan khas Indonesia dari berbagai daerah.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- tentang -->
+ <div class="tentang pt-4 bg-danger" id="tentang">
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Tentang Kami</h1>
+            <p class="lead">Jelajahi Kelezatan Kuliner Nusantara Bersama Kami</p>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="img/kami.jpeg" alt="Tim Kami" class="img-fluid about-img">
+                </div>
+                <div class="col-lg-6 text-white">
+                    <h2 class="fw-bold mb-3">Siapa Kami?</h2>
+                    <p class="text">Kami adalah pecinta kuliner Nusantara yang ingin berbagi kelezatan makanan khas Indonesia.Lewat website ini, kami mengenalkan berbagai makanan tradisional dari Sabang sampai Merauke.Tujuan kami sederhana: supaya kuliner Indonesia tetap dikenal, dicintai, dan nggak pernah terlupakan.</p>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light py-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="fw-bold text-danger">3000+</h2>
+                    <p class="text-muted">Pelanggann Senang</p>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="fw-bold text-danger">1000+</h2>
+                    <p class="text-muted">Orang Datang Kembali</p>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="fw-bold text-danger">34</h2>
+                    <p class="text-muted">Penghargaan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+<!-- footer -->
+ <div class="bg-dark text-light text-center py-3">
+  <small>© 2026 Kuliner Nusantara. All Rights Reserved.</small>
+</div>
+<!-- koneksi -->
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

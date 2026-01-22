@@ -1,0 +1,82 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-img-overlay h1{
+    font-size: 90px;
+    
+}  
+
+
+.about-img {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+#produk {
+  scroll-margin-top: 20px;
+}
+
+#produk h2{
+    color: white;
+}
+
+#tentang {
+  scroll-margin-top: 30px;
+}
+
+#informasi{
+    scroll-margin-top: 80px;
+}
+
+.navbar-brand img{
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 5px;
+}
+
+.container-fluid span{
+    font-weight: bold;
+}
+.card {
+    height: 400px;
+}
+.card-body img{
+    height: 200px;
+    object-fit: cover;
+}
+
+.card p{
+    height: 100px;
+}
+
+.card-body h5{
+    margin-top: 5px;
+ 
+}
+
+.card-body p{
+    height: 80px;
+    text-align: justify;
+    font-size: 10px;
+
+}
+
+.btn-primary{
+    background-color: rgb(0, 143, 0);
+    border: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    mask-image: linear-gradient(to bottom,black 80%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom,black 80%, transparent 100%);
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: 0.1s;
+}
